@@ -1,5 +1,3 @@
-# Java 21 Jakarta EE 10 Apache Tomcat 10 MySQL 8.0 MIT License
-
 🏨 **Hotel Management System**
 A comprehensive Hotel Management System built with Java EE and MySQL
 
