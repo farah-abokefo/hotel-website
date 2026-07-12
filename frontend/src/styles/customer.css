@@ -1,0 +1,471 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-member-since {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.membership-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.membership-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.membership-level {
+  font-size: 14px;
+  color: #666;
+}
+
+.membership-badge {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.membership-progress {
+  margin-top: 15px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+.points-info {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+.profile-section {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-btn, .new-booking {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.edit-btn:hover, .new-booking:hover {
+  background: #5a67d8;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.info-row {
+  display: flex;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #666;
+  width: 120px;
+}
+
+.info-value {
+  color: #333;
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-save {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reservations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.reservation-id {
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 5px;
+}
+
+.reservation-dates {
+  font-size: 13px;
+  color: #666;
+}
+
+.reservation-room {
+  font-size: 13px;
+  color: #888;
+}
+
+.reservation-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-confirmed { background: #d4edda; color: #155724; }
+.status-checked-in { background: #d1ecf1; color: #0c5460; }
+.status-checked-out { background: #e2e3e5; color: #383d41; }
+.status-cancelled { background: #f8d7da; color: #721c24; }
+
+.reservation-amount {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Services Page */
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.services-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.services-layout > div:first-child {
+  flex: 3;
+}
+
+.cart-sidebar {
+  flex: 1;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.cart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-badge {
+  background: #667eea;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.reservation-selector {
+  margin-bottom: 20px;
+}
+
+.reservation-selector label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-cart-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.cart-items {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-item-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cart-item-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.cart-summary {
+  padding: 15px 0;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.checkout-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.category-tab {
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-tab.active {
+  background: #667eea;
+  color: white;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.service-image {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.service-icon {
+  font-size: 36px;
+}
+
+.service-category {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.service-info {
+  padding: 20px;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.service-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.service-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.service-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.service-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn.in-cart {
+  background: #28a745;
+}
+
+@media (max-width: 768px) {
+  .services-layout {
+    flex-direction: column;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .reservation-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}

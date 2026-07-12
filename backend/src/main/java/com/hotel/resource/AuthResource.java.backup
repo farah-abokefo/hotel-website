@@ -1,0 +1,44 @@
+package com.hotel.resource;
+
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import java.util.HashMap;
+import java.util.Map;
+
+@Path("/auth")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
+public class AuthResource {
+    
+    @GET
+    @Path("/test")
+    public Response test() {
+        Map<String, String> response = new HashMap<>();
+        response.put("status", "OK");
+        response.put("message", "Backend is running!");
+        response.put("timestamp", java.time.LocalDateTime.now().toString());
+        return Response.ok(response).build();
+    }
+    
+    @POST
+    @Path("/login")
+    public Response login(Map<String, String> credentials) {
+        String username = credentials.get("username");
+        String password = credentials.get("password");
+        
+        Map<String, Object> response = new HashMap<>();
+        
+        if ("admin".equals(username) && "admin123".equals(password)) {
+            response.put("success", true);
+            response.put("message", "Login successful");
+            response.put("role", "admin");
+            response.put("token", "dummy-token-" + System.currentTimeMillis());
+        } else {
+            response.put("success", false);
+            response.put("message", "Invalid credentials");
+        }
+        
+        return Response.ok(response).build();
+    }
+}

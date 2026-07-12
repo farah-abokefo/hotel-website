@@ -1,0 +1,120 @@
+.data-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.table-search {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-search input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.table-responsive { overflow-x: auto; }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead { background: #f8f9fa; }
+
+.data-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.data-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #666;
+}
+
+.data-table tbody tr:hover { background: #f8f9fa; }
+
+.sort-icon { margin-left: 5px; font-size: 12px; }
+
+.action-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.action-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.action-edit { background: #ffc107; color: #333; }
+.action-delete { background: #dc3545; color: white; }
+.action-view { background: #17a2b8; color: white; }
+
+.no-data { text-align: center; padding: 40px; color: #999; }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.pagination-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.pagination-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.status-available { background: #d4edda; color: #155724; }
+.status-occupied { background: #f8d7da; color: #721c24; }
+.status-maintenance { background: #fff3cd; color: #856404; }
+.status-confirmed { background: #d4edda; color: #155724; }
+.status-pending { background: #fff3cd; color: #856404; }
+.status-checked-in { background: #d1ecf1; color: #0c5460; }
+.status-checked-out { background: #e2e3e5; color: #383d41; }
+.status-cancelled { background: #f8d7da; color: #721c24; }
+.status-active { background: #d4edda; color: #155724; }
+.status-inactive { background: #e2e3e5; color: #383d41; }
