@@ -170,12 +170,6 @@ SOFTWARE.
 
 <div align="center">
 
-### ⭐ Star Us on GitHub
-If you find this project useful, please give it a star!
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/hotel-management-system?style=social)](https://github.com/yourusername/hotel-management-system/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/hotel-management-system?style=social)](https://github.com/yourusername/hotel-management-system/network/members)
-
 Built with ❤️ by **Farah*
 
 </div>
